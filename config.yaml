@@ -1,0 +1,31 @@
+# Configuration file
+target:
+  timeout: 10
+  retries: 3
+
+scanning:
+  threads: 10
+  deep_scan: true
+  follow_redirects: true
+
+sql_injection:
+  enabled: true
+  timeout: 5
+  test_blind: true
+  test_time_based: true
+  test_error_based: true
+  test_union_based: true
+
+api_testing:
+  enabled: true
+  test_auth: true
+  test_validation: true
+
+reporting:
+  format: pdf
+  include_payloads: true
+  include_remediation: true
+
+logging:
+  level: INFO
+  file: assessment.log
