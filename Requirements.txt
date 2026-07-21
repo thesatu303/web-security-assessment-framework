@@ -11,4 +11,7 @@ EOF
 
 
 ( if you want to scan any website so run is this in terminal and replace your website name)
-python main.py --target https://httpbin.org/get --output report.pdf
+```bash
+pip install -r requirements.txt
+python main.py --target https://example.com --output report.pdf
+```
